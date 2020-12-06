@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabin in the woods</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!--Title Menu: This will be copied to the second page to link the two together-->
+    <div>
+      <header class="menu">
+        <h1>The Cabin in the woods</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="cast.html">The Cast</a>
+        </nav>
+        <!--This audio will be playing in the background as you visit the site. It gives the site a tense theme which is why I decided to hide the controls-->
+        <audio hidden controls autoplay loop>
+          <source src="aud/Cabin-in-the-woods_mixdown.wav" type="audio/wav">
+          <source src="aud/Cabin-in-the-woods_mixdown.ogg" type="audio/ogg">
+          <source src="aud/Cabin-in-the-woods_mixdown.mp3" type="audio/mp3">
+        </audio>
+      </header>
+      </div>
+      <!--Synopsis-->
+      <div id="synopsis" >
+        <article>
+          <h2>Synopsis</h2>
+          <p>Have you ever felt like there was someone watching you? In the corner of your eye you catch a glimpse of something not quite right, somthing off? A shiver up your spine you cant explain? It all has a reason, a purpose. Dana, Curt, Jules, Marty and Holden find this out when their trip to a cabin in the woods isnt the quiet party get away they had hoped for. Something sinister, even corporate, is watching them influencing their actions as the night goes on.  </p>
+          <p></p>
+        </article>
+      </div>
+      <!--Trailer: I used the following css to make the video centre on the page:
+
+      video{
+        display: block;
+        margin: auto;
+      }
+
+      The display rule allows me to control what type of display the video element is in.
+      The block element allows me to place the video in a block, like how the <div> element works.
+      This in combination with making the margin auto, which places the video in the centre by
+      automatically making the space either side equal,allows me to centre the video properly.
+
+      https://stackoverflow.com/questions/17508729/how-do-you-center-a-video-using-css
+    -->
+      <div>
+        <video controls muted height="75%" width="75%">
+          <source src="vid/trailerMp4.mp4" type="video/mp4">
+          <source src="vid/trailerOgv.ogv" type="video/ogg">
+          <source src="vid/trailerWebm.webm" type="video/webm">
+          <p>Your browser seems to not support the video element. Please click <a href="vid/trailerMp4.mp4">here</a> for a download.</p>
+        </video>
+      </div>
+      <!--Footer-->
+      <footer>
+        <p>Made by Sam Taylor, P2586650</p>
+      </footer>
+    </div>
+  </body>
+</html>

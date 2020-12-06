@@ -1,0 +1,100 @@
+header{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: georgia, serif, sans-serif;
+  font-weight: bold;
+  background-color: black;
+  padding: 5px;
+}
+footer{
+  text-align: center;
+  font-size: 25px;
+  background-color: black;
+}
+body{
+  background-image: url(../img/forest.jpg);
+  background-repeat: round;
+  color: darkgrey;
+}
+#synopsis{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+video{
+  display: block;
+  margin: auto;
+}
+
+.castPic{
+  float: left;
+  border: 5px red solid;
+  height: 161px;
+  width: 110;
+}
+
+.cast::after{
+  content:"";
+  display:block;
+  clear: both;
+}
+
+.actorInfo{
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-size: 16pt;
+  border: 20px black clear;
+  padding: 10px;
+  flex: initial;
+  justify-content: space-around;
+  margin-left:0;
+}
+
+
+aside{
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-size: 16pt;
+  border: 22px black solid;
+  padding: 5px;
+  flex: initial;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-wrap:wrap;
+  margin-bottom: 0px;
+}
+
+.asideheading{
+  display: flex;
+  margin-right:5px;
+}
+
+.cast{
+  background-color: rgba(100, 100, 100, 0.7);
+  border:5px black solid;
+  padding:0px;
+}
+
+.castheader{
+  font-size: 20pt;
+}
+
+ul{
+  flex-grow: 5;
+}
+
+.interview{
+  background-color:  rgba(0, 0, 0, 0.7);
+}
+
+#shortcutMenu{
+  font-size: 16pt;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shortcut{
+  background-color: white;
+  color:black;
+  border: 3px black solid;
+}

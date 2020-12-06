@@ -98,3 +98,8 @@ ul{
   color:black;
   border: 3px black solid;
 }
+
+.menuButtons{
+  display: flex;
+  justify-content: space-around;
+}

@@ -15,12 +15,7 @@
           <a href="index.html">Home</a>
           <a href="cast.html">The Cast</a>
         </nav>
-        <!--This audio will be playing in the background as you visit the site. It gives the site a tense theme which is why I decided to hide the controls-->
-        <audio hidden controls autoplay loop>
-          <source src="aud/Cabin-in-the-woods_mixdown.wav" type="audio/wav">
-          <source src="aud/Cabin-in-the-woods_mixdown.ogg" type="audio/ogg">
-          <source src="aud/Cabin-in-the-woods_mixdown.mp3" type="audio/mp3">
-        </audio>
+
       </header>
     </div>
     <!--Shortcut menu-->
@@ -58,7 +53,7 @@
         <div class="interview">
           <h4>Interview:</h4>
           <p>Below please listen to the totally real interview with Anna Hutchison:</p>
-          <audio controls>
+          <audio controls style="position:static;">
             <source src="aud/interviews/anna.mp3" type="audio/mp3">
             <source src="aud/interviews/anna.wav" type="audio/wav">
             <source src="aud/interviews/anna.ogg" type="audio/ogg">
@@ -200,6 +195,20 @@
     <!--Footer-->
     <footer>
       <p>Made by Sam Taylor, P2586650</p>
+      <div class="audioControl">
+          <!--This audio will be playing in the background as you visit the site.
+              It gives the site a tense atmosphere to the page which is what i wanted
+              to get with the website.I was going to initially going to make the controls
+              hidden but then decided to put the contols in the footer to allow for the user
+              to have more control over their experience-->
+        <p>Background audio control:
+          <audio class="backgroundAudio" controls autoplay loop>
+            <source src="aud/Cabin-in-the-woods_mixdown.wav" type="audio/wav">
+            <source src="aud/Cabin-in-the-woods_mixdown.ogg" type="audio/ogg">
+            <source src="aud/Cabin-in-the-woods_mixdown.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

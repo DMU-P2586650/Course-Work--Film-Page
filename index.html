@@ -8,7 +8,29 @@
   </head>
   <body>
     <!--Title Menu: This will be copied to the second page to link the two together.
-        I have used a flex display to space out the two buttons an d -->
+        I have used a flex display to space out the two buttons on the menu using:
+
+        .menuButtons{
+        display: flex;
+        justify-content: space-around;
+
+        and then decided to use the following css:
+
+        .menuButtons a{
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+          padding: 10px 10px;
+        }
+        .menuButtons a:hover{
+          background-color: rgb(40,40,40);
+        }
+        This changed the two buttons into rows and when hovering over the anchor elements it changes the colour of the block to a dark grey.
+
+
+      -->
+
+
     <div>
       <header class="menu">
         <h1>The Cabin in the woods</h1>
@@ -23,7 +45,7 @@
       <article>
         <h2>Synopsis</h2>
         <p>Have you ever felt like there was someone watching you? In the corner of your eye you catch a glimpse of something not quite right, somthing off? A shiver up your spine you cant explain? It all has a reason, a purpose. Dana, Curt, Jules, Marty and Holden find this out when their trip to a cabin in the woods isnt the quiet party get away they had hoped for. Something sinister, even corporate, is watching them influencing their actions as the night goes on.  </p>
-        <p></p>
+        <p> Coming out in December of 2011, The Cabin In The Woods is a horror comedy abput a group of friends going on a trip to, as the name suggests, a cabin in the woods.  </p>
       </article>
     </div>
     <!--Trailer: I used the following css to make the video centre on the page:

@@ -101,9 +101,16 @@ ul{
   top:0;
 }
 
-.menuButtons{
+.menuButtons a{
   display: flex;
+  flex-flow: row;
   justify-content: space-around;
+  padding: 10px 10px;
+
+}
+
+.menuButtons a:hover{
+  background-color: rgb(40,40,40);
 }
 
 

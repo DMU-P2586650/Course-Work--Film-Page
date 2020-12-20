@@ -12,11 +12,18 @@ footer{
   font-size: 25px;
   background-color: black;
 }
+
+/*I wanted to use a wooded foresty background for the page that didnt make it look repeating as
+to keep to the idea of it being an actual forest and keeping the user enticed in the pages. This is why
+I used the background-repeat: round; style rule to stretch the image to fit the whole page*/
 body{
   background-image: url(../img/forest.jpg);
   background-repeat: round;
   color: darkgrey;
 }
+
+/*I used the rgba option when picking the colour for the page as it allows the user to still
+ see the background image while still clearly seeing the synopsis and text*/
 #synopsis{
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -26,11 +33,16 @@ video{
   margin: auto;
 }
 
+/*The float was used to keep the images to the left of page. I decided to use a class castPic
+ rather then just the img as it helps see clearly what its affecting as well allow for future
+development of the page if needed. I also added a border to pictures to help with the layout as
+otherwise there are small lines that make the page look messy. By adding the border it adds a bit of colour
+while also fixing this problem. */
 .castPic{
   float: left;
   border: 5px red solid;
   height: 161px;
-  width: 110;
+  width: 110px;
 }
 
 .cast::after{
@@ -50,7 +62,9 @@ video{
   margin-left:0;
 }
 
-
+/* I used a flex display for my aside parts to have the lists next to each other when on a desktop and
+on top of each other when on mobile. As I used set borders the text wont wrap which is why it is important that
+the lists are easy to ready still when on mobile. */
 aside{
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -79,6 +93,7 @@ aside{
   font-size: 20pt;
 }
 
+/* Flex grow is used to have the lists closer to their respected headings*/
 ul{
   flex-grow: 5;
 }
@@ -87,6 +102,8 @@ ul{
   background-color:  rgba(0, 0, 0, 0.7);
 }
 
+/* The id and class used below control the design of the links individually and teh box container theyre in.
+By using the sticky position, the menu stays at the top making it easy to navigate to each cast member.*/
 #shortcutMenu{
   font-size: 11pt;
   display: flex;
@@ -113,7 +130,7 @@ ul{
   background-color: rgb(40,40,40);
 }
 
-
+/*These rules make the audio controls small so the user can only mute it*/
 .backgroundAudio{
   height: 20px;
   width:20px;
